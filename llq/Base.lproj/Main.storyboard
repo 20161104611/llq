@@ -40,14 +40,6 @@
                                     <action selector="gotoclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWF-zV-wOc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmq-Ig-v32">
-                                <rect key="frame" x="149" y="28" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="后退"/>
-                                <connections>
-                                    <action selector="gobackclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PN2-3q-wps"/>
-                                </connections>
-                            </button>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyl-dW-Kcs">
                                 <rect key="frame" x="0.0" y="134" width="375" height="755"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,6 +55,14 @@
                                 <state key="normal" title="刷新"/>
                                 <connections>
                                     <action selector="refreshclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXd-y9-K6V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmq-Ig-v32">
+                                <rect key="frame" x="172" y="28" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="后退"/>
+                                <connections>
+                                    <action selector="gobackclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PN2-3q-wps"/>
                                 </connections>
                             </button>
                         </subviews>

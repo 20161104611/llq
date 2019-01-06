@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         self.progressView.trackTintColor = UIColor.white // 进度条背景色
         return self.progressView
     }()
-    let progressview = UIProgressView (frame:CGRect.init(x:0,y:0,width:200,height:10))
+    /*let progressview = UIProgressView (frame:CGRect.init(x:0,y:0,width:200,height:10))*/
     
     
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         view.addSubview(progressView)
         
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
-        webView.load(URLRequest.init(url: URL.init(string: "https://www.baidu.com/")!))
+        webView.load(URLRequest.init(url: URL.init(string: "http://www.imnu.edu.cn/")!))
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
             progressView.alpha = 1.0
             progressView.setProgress(Float(webView.estimatedProgress), animated: true)
             if webView.estimatedProgress >= 1.0 {
-                UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseOut, animations: {
+                UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseOut, animations: {
                     self.progressView.alpha = 0
                 }, completion: { (finish) in
                     self.progressView.setProgress(0.0, animated: false)
